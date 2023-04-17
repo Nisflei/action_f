@@ -1,0 +1,17 @@
+name: SOMENTE QA
+
+on:
+  push:
+    branches: [ "QA" ]
+  pull_request:
+    branches: [ "QA" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: USANDO QA
+        run: executando comandos em QA!
