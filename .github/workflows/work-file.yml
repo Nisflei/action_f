@@ -1,5 +1,5 @@
 
-name: Meu Primeiro CI
+name: Meu Primeiro CI - QA
 on:
   push:
     branches: [ "master" ]
