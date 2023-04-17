@@ -1,5 +1,5 @@
 
-name: Meu Primeiro CI - QA
+name: Meu Primeiro CI - MASTER
 on:
   push:
     branches: [ "master" ]
@@ -12,6 +12,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Usando MASTER
+        run: echo Executando na master!!
 
       - name: Primeiro Tarefa
         run: echo Executando o que solicitei!!
